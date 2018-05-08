@@ -35,13 +35,15 @@
       opacity: .8;
       transition: width 2000ms ease-out,
                   height 2000ms ease-out,
-                  border-radius 2000ms ease-out;
+                  border-radius 2000ms ease-out,
+                  opacity 2000ms ease-out;
   }
 
   #photo img:hover {
     width: 250px;
     height: 250px;
     border-radius: 5%;
+    opacity: 1;
   }
   
   nav {
