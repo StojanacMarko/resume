@@ -220,7 +220,7 @@
   /* Vestine */
   
   .skills {
-    background: var(--clr4);
+    background: white;
   }
 
   .skills h2 {
@@ -414,7 +414,7 @@
   
   .contact {
     color: var(--clr1);
-    background: var(--clr4);
+    background: white;
   }
   
   .contact h2 {
