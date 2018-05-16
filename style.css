@@ -301,6 +301,16 @@
     grid-area: 2 / 7 / 3 / 9;
     text-align: center;
   }
+
+  .grid-item-9 {
+    grid-area: 3 / 3 / 4 / 5;
+    text-align: center;
+  }
+  
+  .grid-item-10 {
+    grid-area: 3 / 5 / 4 / 7;
+    text-align: center;
+  }
   
   .edu {
     /*background-image: url(https://images.pexels.com/photos/139307/pexels-photo-139307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
