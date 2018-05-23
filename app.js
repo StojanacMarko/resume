@@ -10,35 +10,39 @@ const elemEdu = document.querySelector(".edu");
 const btnCon = document.querySelector("#btn-con");
 const elemCon = document.querySelector(".contact");
 const btnNavSmall = document.querySelector("#btn-nav-small");
+const nav = document.querySelector("#ul");
 
-btnInfo.addEventListener("click", function(){
-  elemInfo.scrollIntoView();
-  document.getElementById("ul").classList.remove("nav-links-small");
+
+nav.addEventListener("click", function(e) {
+
+  switch(e.target.id) {
+    case "btn-info":
+      elemInfo.scrollIntoView();
+      document.getElementById("ul").classList.remove("nav-links-small");
+      break;
+    case "btn-about":
+      elemAbout.scrollIntoView();
+      document.getElementById("ul").classList.remove("nav-links-small");
+      break;
+    case "btn-skills":
+      elemSkills.scrollIntoView();
+      document.getElementById("ul").classList.remove("nav-links-small");
+      break;
+    case "btn-edu":
+      elemEdu.scrollIntoView();
+      document.getElementById("ul").classList.remove("nav-links-small");
+      break;
+    case "btn-con":
+      elemCon.scrollIntoView();
+      document.getElementById("ul").classList.remove("nav-links-small");
+      break;
+    case "ul":
+      document.getElementById("ul").classList.remove("nav-links-small");
+      break;
+  }
+
 });
 
-btnHead.addEventListener("click", function(){
-  elemInfo.scrollIntoView();
-});
-
-btnAbout.addEventListener("click", function(){
-  elemAbout.scrollIntoView();
-  document.getElementById("ul").classList.remove("nav-links-small");
-})
-
-btnSkills.addEventListener("click", function(){
-  elemSkills.scrollIntoView();
-  document.getElementById("ul").classList.remove("nav-links-small");
-})
-
-btnEdu.addEventListener("click", function(){
-  elemEdu.scrollIntoView();
-  document.getElementById("ul").classList.remove("nav-links-small");
-});
-
-btnCon.addEventListener("click", function(){
-  elemCon.scrollIntoView();
-  document.getElementById("ul").classList.remove("nav-links-small");
-});
 
 $(document).ready(function(){
     $("#btn-web").click(function(){
@@ -52,6 +56,6 @@ $(document).ready(function(){
      });  
 });
 
-btnNavSmall.addEventListener("click", function(){
+btnNavSmall.addEventListener("click", function(e){
   document.getElementById("ul").classList.add("nav-links-small");
 });
