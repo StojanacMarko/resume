@@ -43,6 +43,10 @@ nav.addEventListener("click", function(e) {
 
 });
 
+btnHead.addEventListener("click", function(){
+  elemInfo.scrollIntoView();
+});
+
 
 $(document).ready(function(){
     $("#btn-web").click(function(){
