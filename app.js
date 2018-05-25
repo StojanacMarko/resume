@@ -10,38 +10,46 @@ const elemEdu = document.querySelector(".edu");
 const btnCon = document.querySelector("#btn-con");
 const elemCon = document.querySelector(".contact");
 const btnNavSmall = document.querySelector("#btn-nav-small");
-const nav = document.querySelector("#ul");
+const navUl = document.querySelector("#ul");
 
 
-nav.addEventListener("click", function(e) {
+navUl.addEventListener("click", function(e) {
 
   switch(e.target.id) {
     case "btn-info":
       elemInfo.scrollIntoView();
-      document.getElementById("ul").classList.remove("nav-links-small");
+      navUl.classList.remove("nav-links-small");
       break;
     case "btn-about":
       elemAbout.scrollIntoView();
-      document.getElementById("ul").classList.remove("nav-links-small");
+      navUl.classList.remove("nav-links-small");
       break;
     case "btn-skills":
       elemSkills.scrollIntoView();
-      document.getElementById("ul").classList.remove("nav-links-small");
+      navUl.classList.remove("nav-links-small");
       break;
     case "btn-edu":
       elemEdu.scrollIntoView();
-      document.getElementById("ul").classList.remove("nav-links-small");
+      navUl.classList.remove("nav-links-small");
       break;
     case "btn-con":
       elemCon.scrollIntoView();
-      document.getElementById("ul").classList.remove("nav-links-small");
+      navUl.classList.remove("nav-links-small");
       break;
     case "ul":
-      document.getElementById("ul").classList.remove("nav-links-small");
+      navUl.classList.remove("nav-links-small");
       break;
   }
 
 });
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+      navUl.classList.add("navbar");
+   } else {
+      navUl.classList.remove("navbar");
+   }
+};
 
 btnHead.addEventListener("click", function(){
   elemInfo.scrollIntoView();
