@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "front-end developer CV",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StojanacMarko/resume.git"
+  },
+  "author": "Stojanac Marko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StojanacMarko/resume/issues"
+  },
+  "homepage": "https://github.com/StojanacMarko/resume#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0"
+  }
+}
