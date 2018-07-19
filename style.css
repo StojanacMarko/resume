@@ -318,7 +318,47 @@
     grid-area: 3 / 5 / 4 / 7;
     text-align: center;
   }
+
+/* Portfolio */
+
+  .portfolio {
+    text-align: center;
+  }
+
+  .portfolio h2 {
+    color: var(--clr4);
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 4px solid var(--clr4);
+    max-width: 300px;
+    letter-spacing: 0.3rem;
+    padding: 30px 0 20px 0;
+  }
   
+  .portfolio img {
+    width: 150px;
+    height: 150px;
+    transition: transform 2000ms;
+    margin-top: 30px;
+  }
+  
+  .portfolio img:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+  }
+
+  .portfolio p {
+    margin: 10px 0 40px;
+  }
+
+  .portfolio p a {
+    text-decoration: none;
+    color: var(--clr4);
+    font-size: 1.2rem;
+  }
+  
+ /* Obrazovanje */
+
   .edu {
     /*background-image: url(https://images.pexels.com/photos/139307/pexels-photo-139307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-color: var(--clr1);
@@ -327,9 +367,7 @@
     background-repeat: no-repeat; */
     color: var(--clr4);
   }
-  
-  /* Obrazovanje */
-  
+ 
   .edu h2 {
     text-align: center;
     margin: 0 auto;
