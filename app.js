@@ -5,6 +5,7 @@ const btnAbout = document.querySelector("#btn-about");
 const elemAbout = document.querySelector(".about");
 const btnSkills = document.querySelector("#btn-skills");
 const elemSkills = document.querySelector(".skills");
+const elemPortfolio = document.querySelector(".portfolio");
 const btnEdu = document.querySelector("#btn-edu");
 const elemEdu = document.querySelector(".edu");
 const btnCon = document.querySelector("#btn-con");
@@ -26,6 +27,10 @@ navUl.addEventListener("click", function(e) {
       break;
     case "btn-skills":
       elemSkills.scrollIntoView();
+      navUl.classList.remove("nav-links-small");
+      break;
+    case "btn-portfolio":
+      elemPortfolio.scrollIntoView();
       navUl.classList.remove("nav-links-small");
       break;
     case "btn-edu":
