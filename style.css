@@ -343,7 +343,7 @@
   }
   
   .portfolio img:hover {
-    transform: rotate(10deg);
+    transform: rotate(360deg);
     cursor: pointer;
   }
 
